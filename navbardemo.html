@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Displaying media</title>
+    <style>
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightcoral;
+   
+        }
+        .navbar .logo{
+           flex:1;
+        }
+        .navbar .logo img{
+            height: 40px;
+            border-radius: 10px;
+            border-color: lightcoral;
+        }
+
+        .navbar .title{
+            flex:2;
+             text-align: center ;
+             font-weight: bold;
+             font-family: 'Times New Roman', Times, serif;
+        }
+        .navbar .links a{
+           flex:3;
+            color: antiquewhite;
+            margin-left: 10px;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        @media(max-width:700px){ /* for different screen widths */
+            .navbar{
+                flex-direction:column;
+                text-align:center;
+            }
+        }
+    </style>
+</head>
+<body>
+   <!--<header><h1>Welcome to my media page</h1></header>--> 
+    <nav class="navbar">
+     <div class="logo">
+        <img src="klu.jpg" alt="logo">
+     </div>
+
+     <div class="title">
+       Learning Management System
+     </div>
+     <div class="links">
+       <u><a href="10-rock-paper-scissors.html" target="_blank">Home</a></u>  
+       <u><a href="https://web.telegram.org/a/#-4852611654">About Us</a> </u>   <!-- '#' here is used to redirect the link to the same page  -->
+       <u><a href="11-todo-list.html" target="_blank">SignIn/SignUp</a></u> 
+     </div>
+
+    </nav>
+</body>
+</html>

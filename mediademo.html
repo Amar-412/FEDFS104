@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Demo</title>
+    <style>
+      video{
+        width: 80%;
+        max-width:600px;   
+        margin-top:20%;
+   
+}
+    img{
+        height:30px;
+        margin-top:20px;
+    }
+
+    </style>
+</head>
+<body>
+    <header><h1>Welcome to my Media page</h1></header>
+    <nav class="">
+        <a href="#">Home</a>
+        <a href="#">Gallery</a>
+        <a href="#">Music</a>
+        <a href="#">Video</a>
+        <a href="#">Contact</a>
+    </nav>
+    <marquee scroll-speed="5">Latest Updates: Will come soon in August. This is a trial version!!</marquee> <!-- Can use behaviour attribute -->
+    <div>
+        <h2>   Gallery Section  </h2>
+        
+        <img src="lion.jpg"> 
+    </div>
+
+    <div>
+       <h2> Audio section</h2> 
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            Your browser doesn't support audio play <!--This works as same as the alt tag in the image tag-->
+        </audio>
+    </div>
+
+    <div>
+       <h2>Video section</h2> 
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Browser doesn't support video play
+        </video>
+    </div>
+</body>
+</html>

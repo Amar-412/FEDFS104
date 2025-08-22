@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex_Demo</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20px;
+            background:rgba(0, 0, 0, 0.523);
+        }
+
+        h2 {
+            color:antiquewhite;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .card h3{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .card p{
+            flex-grow:1;
+        }
+        .flex-container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+           align-items: stretch;
+           gap:20px;
+        }
+        .card{
+            background-color: darksalmon;
+            padding: 20px;
+            border-radius: 8px;
+            flex: 1 1 250px; 
+            display: flex;
+            justify-content: space-between;
+            box-shadow:0 2px 5px rgba(140, 0, 255, 0.1);
+            flex-direction: column;
+            max-width: 300px;
+            min-width:200px;
+
+
+        }
+        .card button{
+            padding: 10px;
+            border-radius:4px;
+            justify-content: center;
+            background-color: rgba(0, 204, 255, 0.355);
+        }
+        .card button:hover{
+         background-color: rgba(0, 247, 255, 0.153);
+        }
+
+    </style>
+</head>
+
+<body>
+    <h2>Responsive Flexbox Cards</h2>
+    <div class="flex-container">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p> This is a simple card with some content</p>
+            <button>learn more</button>
+        </div>
+
+        <div class="card">
+            <h3>Card 2</h3>
+            <p> This is a simple card with some content</p>
+            <button>learn more</button>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p> This is a simple card with some content</p>
+            <button>learn more</button>
+        </div>
+    </div>
+</body>
+</html>

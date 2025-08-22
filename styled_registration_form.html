@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student registration Form</title>
+    <style>
+        body {
+            background-color: lch(92.01% 19.51 76.86);
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        div{
+            padding: 10px;
+            display:block;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Student registration Form</h2>
+    <p> </p>
+    <form action="https://www.youtube.com/">
+        
+        <h3> Personal Information </h3>
+        <div>
+            <label for="name">Full-Name:</label><br>
+            <input type="name" id="name" name="name" placeholder="Enter your name">
+        </div>
+
+        <div>
+            <lable for="gender"><b>Gender:</b></lable><br>
+            <input type="radio" id="gender" name="gender" value="M">Male <br>
+            <input type="radio" id="gender" name="gender" value="F">Female
+        </div>
+
+        <div>
+            <label for="email">Email: </label><br>
+            <input type="email" id="email" name="email" placeholder="Enter valid email" required>
+        </div>
+
+
+
+        <div>
+            <label for="number">Contact</label><br>
+            <input type="tel" id="number" pattern=[0-9]{10} for="number" placeholder="Enter contact number" required>
+        </div>
+
+        <div>
+            <label for="birth">Date of Birth</label><br>
+            <input type="date" name="birth" id="birth" required>
+        </div>
+
+        <div>
+            <label for="address">Address: </label><br>
+            <textarea rows="4" id="address"> </textarea>
+        </div>
+
+
+
+
+        <h3>Academic details</h3>
+        <div>
+            <label for="branch">Branch: </label><br>
+            <select>
+                <option>--select--</option>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="me">ME</option>
+                <option value="eee">EEE</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="languages">Languages Known: </label><br>
+            <input type="checkbox" name="checkbox" value="hindi">Hindi
+            <input type="checkbox" name="checkbox" value="english">English
+            <input type="checkbox" name="checkbox" value="bengali">bengali
+            <input type="checkbox" name="checkbox" value="telugu">Telugu
+        </div>
+
+
+        <div>
+            <lable for="resume">Upload Resume</lable>
+            <input type="file">
+        </div>
+
+
+
+        <div>
+            <button onclick="showalert()">Submit</button>
+            <button onclick="exit()">Exit</button>
+        </div>
+
+    </form>
+    <script>
+        function showalert() {
+            alert("Your form has been submitted!! ThankYou");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,61 +1,71 @@
 <!DOCTYPE html>
+
 <head>
     <title>
         table creation
     </title>
     <style>
-        table {
-             background-color: rgb(255, 236, 127);
-             border-color: black;
-             border-radius: 2;
-             border-collapse: separate; 
-             padding: 10px;
+        div {
+
+            display: flex;
+            justify-content: center;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 200px;
         }
         
+        table {
+            border-color: black;
+            border-collapse: separate;
+            border-radius: 2px;
+            padding: 10px;
+        }
     </style>
 </head>
+
 <body>
     <div>
-      <table style=" ">
-        <tr> 
-            <th>Sno</th> 
-            <th>P_Id</th>
-            <th>P_cost</th> 
-            <th>P_name</th> 
-        </tr>
-        <tr>
-        <td>1</td>
-        <td>101</td>
-        <td bgcolor="olive">PS-5</td>
-        <td>50000</td>
-    </tr>
-        <tr>
-        <td>2</td>
-        <td>102</td>
-        <td>keyboard</td>
-        <td>780</td>
-        </tr>
-        <tr>
-        <td>3</td>
-        <td>103</td>
-        <td>SSD</td>
-        <td>1005</td>
-        </tr>
-        <tr>
-        <td>4</td>
-        <td>104</td>
-        <td>Monitor</td>
-        <td>25000</td>
-        </tr>
-        <tr>
-        <td>5</td>
-        <td>105</td>
-        <td>cables</td>
-        <td>5000</td>
-    </tr>
-      </table>
+        <table border="2">
+            <tr>
+                <th>Ist hour</th>
+                <th>2nd hour</th>
+                <th>3rd hour</th>
+                <th rowspan="6"> Recess </th>
+                <th>4th hour</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td></td>
+                <td bgcolor="red">PS-5</td>
+                <td>50000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>102</td>
+                <td>keyboard</td>
+                <td>780</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>103</td>
+                <td>SSD</td>
+                <td>1005</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>104</td>
+                <td>Monitor</td>
+                <td>25000</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>105</td>
+                <td>cables</td>
+                <td>5000</td>
+            </tr>
+        </table>
     </div>
-    
+
 </body>
 
 </html>
