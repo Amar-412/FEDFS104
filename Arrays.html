@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+ <script>
+    let arr=[1,2,3,4,5,6];
+    let sum=0;
+    let product=1;
+    for(let i=0;i<arr.length;i++){
+        sum+=arr[i];
+        product*=arr[i];
+    }
+    document.write("The sum of array is: "+ sum+"<br> <br>");
+    document.write("The sum of array is: "+ product +"<br> <br>");
+    let nums=[10,20,10,40,50,60,70];
+    let t=50;
+    let a,b;
+    for(let i=0;i<nums.length;i++){
+        for(let j=i;j<nums.length;j++){
+            if(nums[i]+nums[j]==t){
+                   a=i;
+                   b=j;
+                   break;   
+            }
+        }
+    }
+    a++;
+    b++;
+    document.write("The indices of the two elememts summing upto "+t+" is "+ a+","+b);
+    console.log(document);
+ </script>  
+</body>
+</html>

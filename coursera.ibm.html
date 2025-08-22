@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IndianSpydey Portfolio</title>
+<style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background-color: #f0f2f5; }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #1E1E2F;
+        color: #fff;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        transition: 0.3s;
+    }
+    nav a:hover {
+        font-weight: bold;
+        text-decoration: underline;
+        color: #FFD700;
+    }
+    .home-icon { width:30px; height:30px; cursor:pointer; margin-left:20px;}
+    section { padding:40px 20px; border-radius: 10px; margin: 20px; }
+    .about { background-color: #cce7ff; display:flex; align-items:center; gap:20px; padding:40px; }
+    .about img {
+        width:150px;
+        height:150px;
+        border-radius:50%;
+        flex-shrink:0;
+    }
+    .about-text { max-width:800px; }
+    .skills { background-color: #d1ffd6; display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+    .skills div {
+        border:1px solid #ccc;
+        padding:15px;
+        border-radius:10px;
+        text-align:center;
+        flex:1 1 150px;
+        background-color: #ffffff;
+    }
+    .skills img { width:50px; height:50px; margin-bottom:10px; }
+    .projects { background-color: #fff2cc; border-radius:10px; }
+    .projects div {
+        border-bottom:1px solid #ccc;
+        padding:15px 0;
+    }
+    .recommendations { background-color: #fdd6f5; border-radius:10px; }
+    .recommendations div {
+        border-bottom:1px solid #ccc;
+        padding:10px 0;
+    }
+    .recommendation-form { margin-top:20px; display:flex; gap:10px; justify-content:center; }
+    .recommendation-form input { flex:1; padding:8px; border-radius:5px; border:1px solid #ccc; }
+    .recommendation-form button { padding:8px 15px; border-radius:5px; border:none; background-color:#1E1E2F; color:white; cursor:pointer; }
+    .recommendation-form button:hover { background-color:#333; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>IndianSpydey</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Project Details</a>
+        <a href="#skills">Skills</a>
+        <a href="#recommendations">Recommendations</a>
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home" class="home-icon" onclick="window.location.href='#'">
+    </nav>
+</header>
+
+<section id="about" class="about">
+    <img src="sydey.png" alt="Profile Image">
+    <div class="about-text">
+        <h3>IndianSpydey</h3>
+        <p>Passionate web developer and tech enthusiast. Skilled in creating interactive applications and learning new technologies. Always eager to build impactful projects.</p>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h2 style="width:100%; text-align:center;">Skills</h2>
+    <div><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"><p>HTML</p></div>
+    <div><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS"><p>CSS</p></div>
+    <div><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript"><p>JavaScript</p></div>
+    <div><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"><p>Python</p></div>
+    <div><img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React"><p>React</p></div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div>
+        <h3>Smart Agriculture App</h3>
+        <p>An app to help farmers monitor crops and improve yield using IoT sensors.</p>
+    </div>
+    <div>
+        <h3>Voice Controlled Car</h3>
+        <p>A project to control a car using voice commands for mobility assistance.</p>
+    </div>
+    <div>
+        <h3>Blind Stick for Visually Impaired</h3>
+        <p>Assistive technology to help visually impaired people navigate safely.</p>
+    </div>
+</section>
+
+<section id="recommendations" class="recommendations">
+    <h2>Recommendations</h2>
+    <div>IndianSpydey is a hardworking and dedicated learner.</div>
+    <div>Great team player and always eager to help others.</div>
+    <div>Creative and solution-oriented problem solver.</div>
+
+    <form class="recommendation-form" onsubmit="addRecommendation(event)">
+        <input type="text" id="recInput" placeholder="Add a recommendation" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<script>
+function addRecommendation(event) {
+    event.preventDefault();
+    const input = document.getElementById('recInput');
+    const newRec = input.value.trim();
+    if(newRec !== '') {
+        const recDiv = document.createElement('div');
+        recDiv.textContent = newRec;
+        document.getElementById('recommendations').appendChild(recDiv);
+        alert('Thank you for leaving a recommendation!');
+        input.value = '';
+    }
+}
+</script>
+
+</body>
+</html>

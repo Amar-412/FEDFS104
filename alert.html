@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ 
+<body>
+    <button onclick="alert('You have submitted the document')">Alert Button</button>
+
+    <button onclick="deleteData()">Delete Item</button>
+
+    <button onclick="showName()">Enter your name</button>
+
+    <button onclick="interact()"> Start interaction</button>
+
+
+   <script>
+        
+         function interact(){
+            alert('Hello! there how are you ?');
+            const name=prompt("What is your name ?");
+            
+            const confirmName=confirm('Are you sure you are '+name);
+            if(confirmName)
+              alert('Hello! '+name);
+            else
+              alert('Wrong identity');
+
+              alert('You can interact now');
+     }
+
+
+        function showName(){
+            const name=prompt("What is your name ?")
+            if(name)
+               alert('Hello! '+name+' Sir');
+            else
+             alert('Hello! Sir');
+        
+            }
+
+        function deleteData(){
+            const confirmDelete=confirm("Are you sure you want to delete?")
+            if(confirmDelete){
+                alert('Item Deleted');
+            }else{
+                alert('Item not deleted');
+            }
+        }
+    </script>
+</body>
+</html>

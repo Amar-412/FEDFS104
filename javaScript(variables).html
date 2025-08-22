@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+
+<body>
+    <script>
+        document.write("The var keyword","<br>");
+        var x = 100;
+        var y = 10.5;
+        var z = "Holla ho"
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+        console.log(typeof (x));
+        console.log(typeof (y));
+        console.log(typeof (z));
+
+        console.log(x + y);
+
+        document.write(x, "<br>");
+
+        var i = 10;
+        document.write(i, "<br>");
+        {                            /*var keyword does not support even the locality(scope) it justs updates  the value */
+            var i = 20;
+            document.write(i, "<br>"); // Global pollution
+        }
+        document.write(i, "<br>");
+
+     document.write("The let keyword","<br>");
+        let u=10;
+        u=20;
+        document.write(u,"<br>");
+
+
+        let j = 10;
+        document.write(j, "<br>");
+        {                            /*let keyword follows the locality(scope) it wont update the value */
+            let j = 20;
+            document.write(j, "<br>");
+        }
+        document.write(j, "<br>");
+
+        document.write("The const keyword","<br>");
+        const b=100;
+        document.write(b, "<br>");
+         
+        const t=100;
+        {
+            const t=250;
+            document.write(t, "<br>");
+        }
+        document.write(t, "<br>");
+
+         let m;
+        document.write(m,"<br>");            /*NO default value allocated */
+
+        document.write("A function call","<br>")
+        function fun(){
+            let j = 10;
+        document.write(j, "<br>");
+        {                            
+            let j = 20;
+            document.write(j, "<br>");
+        }
+        document.write(j, "<br>");
+        }
+
+         fun();
+
+         document.write(typeof(number),"<br>");
+         document.write(typeof [],"<br>");
+         document.write(typeof Symbol(100),"<br>");
+         document.write(typeof null,"<br>");
+         document.write(typeof fun,"<br>");
+         document.write(typeof {},"<br>");
+         document.write(typeof 123n,"<br>");
+         document.write(typeof false,"<br>");
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "../HTML"
+		},
+		{
+			"path": "../../../../../college files/JAVASCRIPT"
+		},
+		{
+			"path": "../../../../../college files/PERSONAL/JAVASCRIPT"
+		},
+		{
+			"path": "../../../../../college files/PERSONAL/PYTHON"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "D:/Downloads/Agri-main"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Agri-main"
+	}
+}

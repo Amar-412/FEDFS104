@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-Javascript</title>
+</head>
+<body>
+    
+
+<script>
+document.write("Hello to basics of JavaScript <br>");
+console.log("This is for console confirmation");
+console.table([1,23,121,454]);
+document.write(10 +"10", "<br>");
+document.write(10+ +"10","<br>" );
+document.write(20-"10","<br>");
+document.write("1"+ +2+"10","<br>");   /* In comparison like this highest preference is given to left operand*/
+document.write(10/0,"<br>");
+document.write(10/"0","<br>");
+
+document.write(10=="10","<br>");  /* In comparison like this highest preference is given to the number type */
+document.write("10"==10,"<br>");
+
+document.write(10==="10","<br>")/* In this type coercion does not attempt to change the datatype*/
+
+document.write(true+1,"<br>");/*true =1 and false=0 */
+document.write(3>2>1,"<br>") /* 3>2 is true(1) and 1>1 is false*/
+document.write(10+5/10-5,"<br>");
+document.write((10/2*3)/(10+6-4),"<br>");
+
+9>8>7?document.write("fedf"):document.write("Backend");
+</script>
+
+</body>
+</html>
