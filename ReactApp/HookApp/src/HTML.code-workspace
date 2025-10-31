@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../HTML"
+		},
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../../../../../college files/FEDF/REACTJS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "javascript(FEDF)"
+	}
+}
